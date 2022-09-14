@@ -1,0 +1,65 @@
+.bg-color {
+  background-image: linear-gradient(to right, #8360c3, #2ebf91);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.bg-main {
+  background-image: linear-gradient(-20deg, #00cdac 0%, #8ddad5 100%);
+}
+
+.navbar-brand {
+  font-size: 2rem;
+  color: #1bffd3;
+}
+.navbar-brand:hover {
+  color: #fbff1e;
+}
+
+.nav-link {
+  font-size: 1.3rem;
+  color: #1bffd3;
+}
+.nav-link:hover {
+  color: #fbff1e;
+}
+
+.navbar-toggler {
+  color: #1bffd3;
+}
+.navbar-toggler span.navbar-toggler-icon {
+  color: #fbff1e;
+}
+
+.ml9 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.2em;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+  overflow: hidden;
+}
+
+.ml9 .letter {
+  transform-origin: 50% 100%;
+  display: inline-block;
+  line-height: 1em;
+  color: #8360c3;
+}
+
+.wrap__section-intro {
+  padding: 100px 0;
+}
+@media only screen and (max-width: 576px) {
+  .wrap__section-intro {
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 15px;
+  }
+}
+
+.text__intro {
+  line-height: 2;
+  font-size: 1.3rem;
+}
+
+/*# sourceMappingURL=style.css.map */
