@@ -14,10 +14,18 @@
     <title>My Curriculum Vitae</title>
 </head>
 <body>
+
+<div class="loader-wrapper">
+    <div class="loader">
+    </div>
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+</div>
+
 <header class="header container-fluid p-0">
     <nav class="navbar navbar-expand-md bg-color">
         <div class="container">
-            <a class="navbar-brand" href="#">Main</a>
+            <a class="navbar-brand" href="index.html">Main</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
                     aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span><i class="fa fa-bars" aria-hidden="true"></i></span>
@@ -25,7 +33,7 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav d-flex flex-fill me-auto mb-2 mb-md-0 justify-content-evenly">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
+                        <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">About Me</a>
@@ -40,22 +48,54 @@
 </header>
 <main class="container-fluid bg-main">
     <section class="container d-flex justify-content-between col-12 wrap__section-intro">
-        <div class="col-sm-6 col-md-6 col-lg-6">
+        <div class="col-sm-6 col-md-6 col-lg-6 d-flex flex-column justify-content-evenly">
             <h1 class="ml9">
   <span class="text-wrapper">
     <span class="letters">Strong Junior Frontend Developer</span>
   </span>
             </h1>
             <p class="text__intro ">Hey! My name is Rostyslav Honcharov.
-                I Strong Junior Frontend Developer. I'm glad you visited my site.</p>
+                I Strong Junior Frontend Developer. I'm glad you visited my site. <br> Please read information about me!</p>
+            <a href="#skills" class="link-important text-center my-3">Important</a>
         </div>
         <div class="col-sm-6 col-md-6 col-lg-6"><img class="w-100 rounded-circle" src="img/My-photo.JPG" alt=""></div>
     </section>
-    <section class="container col-12 d-flex ">
-       
+    <section class="container col-12">
+        <h1 class="ml12 text-center flex-fill mb-5">My Skills</h1>
+        <div class="d-flex justify-content-around pb-5" style="">
+            <ul class="list__skills" id="skills">
+                <li class="list__skills-item">HTML 5</li>
+                <li class="list__skills-item">CSS3</li>
+                <li class="list__skills-item">JavaScript</li>
+                <li class="list__skills-item">Vue 3(2)</li>
+                <li class="list__skills-item">Vuetify</li>
+                <li class="list__skills-item">NodeJS</li>
+                <li class="list__skills-item">PHP</li>
+                <li class="list__skills-item">JQuery</li>
+                <li class="list__skills-item">SASS</li>
+                <li class="list__skills-item">LESS</li>
+                <li class="list__skills-item">Bootstrap4/5</li>
+                <li class="list__skills-item">TailwindCSS</li>
+                </ul>
+            <ul class="list__skills">
+                <li class="list__skills-item">Animation CSS3/JS</li>
+                <li class="list__skills-item">Sprite CSS3</li>
+                <li class="list__skills-item">Grid/Flex layout</li>
+                <li class="list__skills-item">Аdaptive and responsive layout</li>
+                <li class="list__skills-item">Gulp</li>
+                <li class="list__skills-item">Webpack</li>
+                <li class="list__skills-item">GitHub</li>
+                <li class="list__skills-item">GitLab</li>
+                <li class="list__skills-item">Avocode</li>
+                <li class="list__skills-item">PhotoShop</li>
+                <li class="list__skills-item">Figma</li>
+                <li class="list__skills-item">SVG</li>
+            </ul>
+        </div>
     </section>
 </main>
-<footer class="footer">
+
+<footer class="footer py-5">
 
 </footer>
 
