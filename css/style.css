@@ -11,10 +11,6 @@ p, ul, li {
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
-.footer {
-  background-image: linear-gradient(to right, #8360c3, #2ebf91);
-}
-
 .bg-main {
   background-image: linear-gradient(-20deg, #00cdac 0%, #8ddad5 100%);
 }
@@ -171,15 +167,6 @@ p, ul, li {
   color: #8360c3;
 }
 
-.link-important {
-  font-size: 2rem;
-  color: #8360c3;
-  text-decoration: none;
-}
-.link-important:hover {
-  color: #fbff1e;
-}
-
 .wrap__section-intro {
   padding: 100px 0;
 }
@@ -217,6 +204,36 @@ p, ul, li {
   .list__skills {
     display: flex;
     flex-direction: column;
+  }
+}
+
+.btn-link {
+  border: 3px solid #8360c3;
+  background-color: transparent;
+  text-decoration: none;
+}
+.btn-link .link-important {
+  font-size: 2rem;
+  color: #8360c3;
+  text-decoration: none;
+}
+.btn-link .link-important:hover {
+  color: #fbff1e;
+}
+.btn-link:hover {
+  border: 3px solid #fbff1e;
+}
+.btn-link:focus {
+  border: 3px solid #fbff1e;
+}
+
+@media only screen and (max-width: 576px) {
+  .contacts {
+    display: flex;
+    flex-direction: column;
+  }
+  .contacts a {
+    padding: 10px 0;
   }
 }
 

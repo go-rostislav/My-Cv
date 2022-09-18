@@ -1,4 +1,4 @@
-h1,h2,h3,h4,h5,h6,p,a,ul,li {
+h1, h2, h3, h4, h5, h6, p, a, ul, li {
   cursor: pointer;
 }
 
@@ -17,9 +17,9 @@ p, ul, li {
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
-.footer {
-  background-image: linear-gradient(to right, #8360c3, #2ebf91);
-}
+//.footer {
+//  background-image: linear-gradient(to right, #8360c3, #2ebf91);
+//}
 
 .bg-main {
   background-image: linear-gradient(-20deg, #00cdac 0%, #8ddad5 100%);
@@ -194,15 +194,6 @@ p, ul, li {
   color: #8360c3;
 }
 
-.link-important {
-  font-size: 2rem;
-  color: #8360c3;
-  text-decoration: none;
-  &:hover {
-    color: #fbff1e;
-  }
-}
-
 .wrap__section-intro {
   padding: 100px 0;
   @media only screen and (max-width: 576px) {
@@ -220,6 +211,7 @@ p, ul, li {
   text-transform: uppercase;
   letter-spacing: 0.5em;
   color: #8360c3;
+
   .letter {
     display: inline-block;
     line-height: 1em;
@@ -230,6 +222,7 @@ p, ul, li {
   &-item {
     list-style-type: none;
     line-height: 2;
+
     &:hover {
       cursor: pointer;
       color: #fbff1e;
@@ -239,5 +232,38 @@ p, ul, li {
   @media only screen and (max-width: 576px) {
     display: flex;
     flex-direction: column;
+  }
+}
+
+.btn-link {
+  border: 3px solid #8360c3;
+  background-color: transparent;
+  text-decoration: none;
+  .link-important {
+    font-size: 2rem;
+    color: #8360c3;
+    text-decoration: none;
+
+    &:hover {
+      color: #fbff1e;
+    }
+  }
+
+  &:hover {
+    border: 3px solid #fbff1e;
+  }
+
+  &:focus {
+    border: 3px solid #fbff1e;
+  }
+}
+
+.contacts {
+  @media only screen and (max-width: 576px) {
+    display: flex;
+    flex-direction: column;
+    a {
+      padding: 10px 0;
+    }
   }
 }
