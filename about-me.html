@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/bootstrap-grid.css">
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <title>My Curriculum Vitae</title>
@@ -38,9 +39,6 @@
                     <li class="nav-item">
                         <a class="nav-link" href="about-me.html">About Me</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
                 </ul>
             </div>
         </div>
@@ -49,13 +47,18 @@
 
 <main class="container-fluid bg-main">
     <section class="container">
+        <ol class="breadcrumb py-5">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">About Me</li>
+        </ol>
         <div>
-            <p>Hello. My name is Rostislav Goncharov. <br>I am Ukrainian. Currently working in Czech Republic as a Junior
-                Frontend Developer. <br>Experience in commercial development for 6 months</p>
-            <div class="d-flex justify-content-between contacts">
-                <a href="">GitHub</a>
-                <a href="">+420736548700 (Telegram)</a>
-                <a href="">skapik7@gmail.com</a>
+            <p class="wow animate__fadeInTopLeft">Hello. My name is Rostislav Honcharov. <br>I am Ukrainian. <br> Currently working in Czech Republic in Complete Internet Services (CIS) as
+                Junior
+                Frontend Developer. <br>Experience in commercial development for 6 months.</p>
+            <div class="d-flex justify-content-between contacts my-5">
+                <a class="link__information wow animate__fadeInBottomLeft" href="#">GitHub</a>
+                <a class="link__information wow animate__fadeInDown" href="#">+420736548700 (Telegram)</a>
+                <a class="link__information wow animate__fadeInBottomRight" href="#">skapik7@gmail.com</a>
             </div>
             <p>Languages:</p>
             <ul class="languages-list">
@@ -65,50 +68,53 @@
                 <li>Czech: A2</li>
             </ul>
             <div>
-                <h3> EDUCATION:</h3>
-                <div>
-                    <h4> LemonSchool :Front-end (HTML/CSS+JS).</h4>
-                    <h5> Graduated 2021</h5>
-                </div>
-                <div>
-                    <h4> National Aerospace University «Kharkiv Aviation Institute».: Bachelor's degree
-                        Aerospace Engineering, Aircraft Engine and Power Plant Production Techonologies</h4>
-                    <h5 class="m-0"> Graduated 2020.</h5>
+                <h1 class="ml16 text-center my-5">Educations:</h1>
+                <div class="d-flex col-12 justify-content-between wrap__cards">
+                    <div class="card col-lg-5 align-items-center rounded-3 wow animate__heartBeat">
+                        <div class="card-body flex-fill justify-content-between">
+                            <div class="d-flex flex-column justify-content-between flex-fill">
+                            <h4 class="card-title text-start px-3">LemonSchool :Front-end (HTML/CSS+JS).</h4>
+                            <h5 class="card-text text-start px-3 mb-3">Graduated 2021</h5>
+                            </div>
+                            <button class="btn-link"><a class="link-important" href="img/LS.jpg">Certification
+                                LemonSchool</a></button>
+                        </div>
+                    </div>
+                    <div class="card col-lg-5 align-items-center rounded-3 wow animate__heartBeat">
+                        <div class="card-body justify-content-end">
+                            <h4 class="card-title text-start px-3">National Aerospace University «Kharkiv Aviation
+                                Institute».: Bachelor's degree
+                                Aerospace Engineering, Aircraft Engine and Power Plant Production Techonologies</h4>
+                            <h5 class="card-text text-start px-3">Graduated 2020.</h5>
+                            <button class="btn-link"><a class="link-important" href="img/Diplom.jpg">Diploma
+                                Bachelor's</a></button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     <section class="container col-12">
-        <h1 class="ml12 text-center flex-fill mb-5">My Skills</h1>
-        <div class="d-flex justify-content-around pb-5" style="">
-            <ul class="list__skills" id="skills">
-                <li class="list__skills-item">HTML 5</li>
-                <li class="list__skills-item">CSS3</li>
-                <li class="list__skills-item">JavaScript</li>
-                <li class="list__skills-item">Vue 3(2)</li>
-                <li class="list__skills-item">Vuetify</li>
-                <li class="list__skills-item">NodeJS</li>
-                <li class="list__skills-item">PHP</li>
-                <li class="list__skills-item">JQuery</li>
-                <li class="list__skills-item">SASS</li>
-                <li class="list__skills-item">LESS</li>
-                <li class="list__skills-item">Bootstrap4/5</li>
-                <li class="list__skills-item">TailwindCSS</li>
-            </ul>
-            <ul class="list__skills">
-                <li class="list__skills-item">Animation CSS3/JS</li>
-                <li class="list__skills-item">Sprite CSS3</li>
-                <li class="list__skills-item">Grid/Flex layout</li>
-                <li class="list__skills-item">Аdaptive and responsive layout</li>
-                <li class="list__skills-item">Gulp</li>
-                <li class="list__skills-item">Webpack</li>
-                <li class="list__skills-item">GitHub</li>
-                <li class="list__skills-item">GitLab</li>
-                <li class="list__skills-item">Avocode</li>
-                <li class="list__skills-item">PhotoShop</li>
-                <li class="list__skills-item">Figma</li>
-                <li class="list__skills-item">SVG</li>
-            </ul>
+        <h1 class="ml10 text-center my-5">
+  <span class="text-wrapper">
+    <span class="letters">My Works</span>
+  </span>
+        </h1>
+        <div class="d-flex justify-content-between pb-5">
+            <div class="col-lg-5 invisible-style">
+                <img src="img/PC-web.jpg" class="w-100" alt="">
+                <a href="https://go-rostislav.github.io/Bright-Lights/" class="h3 d-flex justify-content-center py-4">Bright-light</a>
+            </div>
+            <div class="col-lg-5 invisible-style">
+                <img src="img/Bright-light.jpg" class="w-100" alt="">
+                <a href="https://go-rostislav.github.io/pc-web-syte/" class="h3 d-flex justify-content-center py-4">PC-web</a>
+            </div>
+        </div>
+        <div class="special__wrap">
+            <div class="col-md-5 mx-3 w-100 d-flex flex-column">
+                <button class="special-button btn-link mb-5 wow animate__lightSpeedInLeft"><a class="link-important" href="https://go-rostislav.github.io/Bright-Lights/">PC-web</a></button>
+                <button class="special-button btn-link mb-5 wow animate__lightSpeedInRight"><a class="link-important" href="https://go-rostislav.github.io/pc-web-syte/">Bright-light</a></button>
+            </div>
         </div>
     </section>
 </main>
@@ -129,9 +135,6 @@
                     <li class="nav-item">
                         <a class="nav-link" href="about-me.html">About Me</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
                 </ul>
             </div>
         </div>
@@ -139,7 +142,8 @@
 </footer>
 
 
-<script src="js/bootstrap.min.js"></script>
+<script src="js/wow.min.js"></script>
 <script src="js/about-me.js"></script>
+<script src="js/bootstrap.min.js"></script>
 </body>
 </html>

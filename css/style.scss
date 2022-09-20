@@ -239,10 +239,14 @@ p, ul, li {
   border: 3px solid #8360c3;
   background-color: transparent;
   text-decoration: none;
+  padding: 0;
+
   .link-important {
     font-size: 2rem;
     color: #8360c3;
     text-decoration: none;
+    display: block;
+    padding: 10px;
 
     &:hover {
       color: #fbff1e;
@@ -264,6 +268,102 @@ p, ul, li {
     flex-direction: column;
     a {
       padding: 10px 0;
+    }
+  }
+}
+
+.wrap__cards {
+  @media only screen and (max-width: 991px) {
+    display: flex;
+    flex-direction: column;
+    .card {
+      margin-top: 30px;
+    }
+  }
+}
+
+.card {
+  border: 3px solid #8360c3;
+  background-color: transparent;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+  .card-body {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.link__information {
+  color: #8360c3;
+  font-size: 1.5rem;
+  text-decoration: none;
+  &:hover {
+    color: #fbff1e;
+  }
+}
+.ml10 {
+  position: relative;
+  color: #8360c3;
+  text-transform: uppercase;
+}
+
+.ml10 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.ml10 .letter {
+  display: inline-block;
+  line-height: 1em;
+  transform-origin: 0 0;
+}
+
+.ml16 {
+  color: #8360c3;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  overflow: hidden;
+}
+
+.ml16 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
+.breadcrumb-item {
+  a {
+    color: #fbff1e;
+    text-decoration: none;
+
+  }
+}
+
+.invisible-style {
+  a {
+    text-decoration: none;
+    color: #8360c3;
+
+    &:hover {
+      color: #fbff1e;
+    }
+  }
+
+  @media only screen and (max-width: 991px) {
+    display: none;
+  }
+}
+
+.special__wrap {
+  @media only screen and (max-width: 991px) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .special-button {
+    display: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+    @media only screen and (max-width: 991px) {
+      display: flex;
     }
   }
 }

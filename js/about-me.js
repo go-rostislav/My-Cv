@@ -1,3 +1,12 @@
+const wow = new WOW({
+    boxClass:     'wow',
+    animateClass: 'animate__animated',
+    offset:       30,
+    mobile:       true,
+    live:         true
+})
+wow.init();
+
 // For Live Projects
 window.addEventListener('load',function(){
     document.querySelector('body').classList.add("loaded")
@@ -19,24 +28,40 @@ anime.timeline({loop: true})
     delay: 1000
 });
 
+
 // Wrap every letter in a span
-var textWrappers = document.querySelector('.ml12');
-textWrappers.innerHTML = textWrappers.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+var wraperText = document.querySelector('.ml10 .letters');
+wraperText.innerHTML = wraperText.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
 anime.timeline({loop: true})
     .add({
-        targets: '.ml12 .letter',
-        translateX: [40,0],
-        translateZ: 0,
-        opacity: [0,1],
-        easing: "easeOutExpo",
-        duration: 1200,
-        delay: (el, i) => 500 + 30 * i
+        targets: '.ml10 .letter',
+        rotateY: [-90, 0],
+        duration: 1300,
+        delay: (el, i) => 45 * i
     }).add({
-    targets: '.ml12 .letter',
-    translateX: [0,-30],
-    opacity: [1,0],
-    easing: "easeInExpo",
-    duration: 1100,
-    delay: (el, i) => 100 + 30 * i
+    targets: '.ml10',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+});
+
+// Wrap every letter in a span
+var textWrapper = document.querySelector('.ml16');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+    .add({
+        targets: '.ml16 .letter',
+        translateY: [-100,0],
+        easing: "easeOutExpo",
+        duration: 1400,
+        delay: (el, i) => 30 * i
+    }).add({
+    targets: '.ml16',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
 });

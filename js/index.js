@@ -1,3 +1,12 @@
+const wow = new WOW({
+    boxClass:     'wow',
+    animateClass: 'animate__animated',
+    offset:       30,
+    mobile:       true,
+    live:         true
+})
+wow.init();
+
 // Wrap every letter in a span
 var textWrapper = document.querySelector('.ml9 .letters');
 textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
